@@ -88,22 +88,6 @@ CREATE TABLE `b_article_content`  (
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
 
 -- ----------------------------
--- Table structure for b_author
--- ----------------------------
-DROP TABLE IF EXISTS `b_author`;
-CREATE TABLE `b_author`  (
-  `id` bigint NOT NULL AUTO_INCREMENT,
-  `name` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT '作者名称',
-  `site_name` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT '网站名称',
-  `website` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT '网站地址',
-  `avatar` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT '作者头像',
-  `email` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL,
-  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT '作者简介',
-  `extends_params` text CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL COMMENT '扩展内容',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1804873650319499266 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
-
--- ----------------------------
 -- Table structure for b_category
 -- ----------------------------
 DROP TABLE IF EXISTS `b_category`;
